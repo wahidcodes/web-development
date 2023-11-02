@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.btn{
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+    background-color: white;
+    padding:10px;
+}
+
+.gy{
+   border: 1px solid #285bc9;
+   border-radius:5px;
+   height:40px;
+}
+
+.blackbox{
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    width:100%;
+    padding: 10px;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+.bor{
+    border-radius: 5px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th{
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+    td{
+        padding:10px;
+    }
+.aa{
+    color: white;
+    text-decoration: none;
+}    
+        
+.box1{
+        background-color: red;
+        color:white;
+        text-decoration: none;
+        border:none;
+     }
+     
+.collapsible{
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 19px;
+    width: 100%;
+    border:none;
+    text-align:left;
+    outline:none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover{
+    background-color: #555;
+}
+
+.content{
+    padding: 0 18px;
+    display:none;
+    overflow:hidden;
+    background-color: #f1f1f1;
+}
+
+.uc{
+    text-decoration: none;
+    color:blue;
+}

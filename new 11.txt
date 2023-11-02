@@ -1,0 +1,69 @@
+
+<script>
+function myfun(){
+				if(window.XMLHttpRequest)
+				{
+					a=new XMLHttpRequest();
+				}
+				else
+				{
+					a=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				a.onreadystatechange=function(){
+					if(a.readyState==4&& a.status==200)
+					{
+						alert(a.responseText);
+					}
+				}
+		
+	var ordby = document.getElementById("ordby").value;
+	var url="test.php";
+	var val="mordby="+ordby;	
+	
+				a.open("POST",url,true);
+				a.setRequestHeader("content-type","application/x-www-form-urlencoded");
+				a.setRequestHeader("content-length",val.length);
+				a.setRequestHeader("connecion","close");
+				a.send(val)
+		
+	}
+</script>
+
+
+<script>
+function myfun(){
+	var x = document.getElementById("ordby").value;
+	document.getElementById("demo").innerHTML =  x;
+	
+    var selectedText = ordby.options[ordby.selectedIndex].innerHTML;
+	var selectedValue = ordby.value;
+	var mordby = ordby.value;
+
+
+	
+	alert("Selected Text: " + selectedText + " Value: " + selectedValue);
+
+	}
+</script>
+
+
+
+			<select name="ordby" id="ordby" onchange="myfun()" style="border:1px solid grey; border-radius:5px; height:40px; width:125px;">
+				<Option value="MRP-price desc"<?php if($mordby == "MRP-price desc"){echo("selected");}?>>Discount</option>
+				<Option value="price desc"<?php if($mordby == "price desc"){echo("selected");}?>>Price High-Low</option>
+				<Option value="price"<?php if($mordby == "price"){echo("selected");}?>>Price Low-High</option>
+				<Option value="name"<?php if($mordby == "name"){echo("selected");}?>>Name A-Z</option>
+				<Option value="name desc"<?php if($mordby == "name desc"){echo("selected");}?>>Name Z-A</option>
+			</select>
+						
+			<p id ="demo"></p>
+
+		
+			<?php
+				$mordby=$_POST["ordby"];
+
+			echo "$mordby";
+			echo 'id';
+
+			?>
+

@@ -1,0 +1,23 @@
+.login{
+    text-align: center;
+    
+    width:80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+body{
+    background-color: #f1f1f1;
+}
+
+.btn{
+    width:80%;
+    background-color: rgba(8, 115, 216, 0.548);
+    color: white;
+}
+
+.form-ctrl{
+    border-radius: 5px;
+    border: 3px ;
+}

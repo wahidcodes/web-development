@@ -1,0 +1,39 @@
+			<label for="filtby">Filter By:</label>
+			<select style="border:1px solid grey; border-radius:5px; height:40px; width:150px;">
+				<option></option>
+				<option></option>
+				<option></option>
+			</select><BR><BR>
+		
+			<br><br>
+
+
+			<select name="ordby" id="ordby" onchange="myfun()" style="border:1px solid grey; border-radius:5px; height:40px; width:125px;">
+				<Option value="MRP-price desc"<?php if($mordby == "MRP-price desc"){echo("selected");}?>>Discount</option>
+				<Option value="price desc"<?php if($mordby == "price desc"){echo("selected");}?>>Price High-Low</option>
+				<Option value="price"<?php if($mordby == "price"){echo("selected");}?>>Price Low-High</option>
+				<Option value="name"<?php if($mordby == "name"){echo("selected");}?>>Name A-Z</option>
+				<Option value="name desc"<?php if($mordby == "name desc"){echo("selected");}?>>Name Z-A</option>
+			</select> 
+
+
+	<div>
+		<form name="form1" method="post">
+		
+			<label for="ordby">Order by	</label>
+
+			<select name="ordby" id="ordby" onchange="myfun()" style="border:1px solid grey; border-radius:5px; height:40px; width:125px;">
+				<Option value="MRP-price desc">Discount</option>
+				<Option value="price desc">Price High-Low</option>
+				<Option value="price">Price Low-High</option>
+				<Option value="name">Name A-Z</option>
+				<Option value="name desc">Name Z-A</option>
+			</select> 
+
+			<p id="ordby">
+			
+			</p>
+
+		</form>
+	</div>
+

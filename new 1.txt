@@ -1,0 +1,40 @@
+            <tr>
+                <th>Brand:</th>
+
+    		    <td><select name="mmodid" name="mmodel">
+		
+	        	<?php 
+                    $conn = $pdo->open();
+                    $sql = "select id,name from brandmast";
+        			$result = $conn->prepare($sql);
+	        		$result->execute();
+		        	while($row=$result->fetch(PDO::FETCH_ASSOC))
+				
+        	    	{
+		    	    echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+                     }
+                    $pdo->close();
+                ?>
+    	    	</select></td>
+            </tr>
+
+            <tr>
+                <th>Capacity:</th>
+
+    		    <td><select name="mcapid" name="mcapname">
+		
+	        	<?php 
+                    $conn = $pdo->open();
+                    $sql = "select id,name from sizemast";
+        			$result = $conn->prepare($sql);
+	        		$result->execute();
+		        	while($row=$result->fetch(PDO::FETCH_ASSOC))
+				
+        	    	{
+		    	    echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+                     }
+                    $pdo->close();
+                ?>
+    	    	</select></td>
+            </tr>
+

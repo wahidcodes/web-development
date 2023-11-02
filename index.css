@@ -1,0 +1,183 @@
+
+@viewport{
+   width:device-width;
+   zoom:1.0;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    
+}
+
+  .cel{
+     width:100px;
+     padding:60px;
+     border:none;
+ }
+ .blackbox{
+    position: relative;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    width:100%;
+    padding: 10px;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+    }
+
+
+ .sh{
+    padding: 4px;
+    width: 100%;
+    box-shadow:2px 2px solid black ;
+    border: none;
+    background-color: white;
+    text-align: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.box2{
+ padding: 10px;
+ text-decoration: none;
+ background-color: white;
+ border:10px blue;
+ border-radius: 6px;
+}
+
+.tab{
+width: 10px;
+border: none;
+padding: 2px;
+}
+
+a{
+text-decoration: none;
+color: black;
+
+}
+
+.box{
+  
+   color: black;
+   text-decoration: none;
+   border:none;
+}
+
+.box:hover{
+   box-shadow:2px 2px black;
+}
+
+.box1{
+   background-color: red;
+   color:white;
+   text-decoration: none;
+   border:none;
+}
+
+.aa{
+color: white;
+}    
+
+.aa:hover{
+background-color: white;
+color: black;
+padding: 10px;
+}
+
+
+hr{
+color: rgb(184, 184, 184)(128, 128, 128, 0.945);
+}
+.left{
+align-items: left;
+}
+
+
+.spc{
+border:0px;
+padding:10px;
+text-align: center;
+height:50px;
+}
+
+.spc:hover{
+color:solid red;
+}
+
+.con{
+font-size: 10px;
+}
+
+.rnd{
+border: 2px solid black;
+border-radius: 6px;
+padding: 10px;
+height:370px;
+width:400px;
+margin-left: 10px;
+}
+
+.box3{
+  background-color: black;
+  color: white;
+  border: none;
+  padding:15px;
+  width:100px;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.hi{
+	width:420px; 
+	height:550px; 
+	padding:30px; 
+	margin-left:auto; 
+   background-color:white;
+	border:none;
+	}
+	
+.wte{
+    background-color:white;
+	border:black;
+	font-size:10px;
+   padding:10px;
+   color:black;
+     }
+
+.bck{
+   background-color: black;
+   color: white;
+   width:100%;
+   font-family: "Open Sans";
+   
+   position: relative;
+   display: grid;
+   grid-template-columns: 120px 120px 120px;
+   align-items: start;
+   justify-content: space-between;   
+}
+
+.box4{
+   background-color: red;
+   border: none;
+   padding: 5px;
+   color:white;
+
+}
+
+.brd{
+   border-radius: 7px;
+   width:250px;
+   height:30px;
+}
+
+.nxt{ 
+   padding:50px;
+   padding-top: 50px; 
+   padding-left: 70px;
+      
+}
